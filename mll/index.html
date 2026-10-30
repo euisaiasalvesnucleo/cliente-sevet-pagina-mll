@@ -18,8 +18,7 @@
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 var PIXEL_ID = '2232477994340518';
-var LEAD = 'lead2';
-if (PIXEL_ID !== 'SEU_PIXEL_ID') { fbq('init', PIXEL_ID); fbq('track', 'PageView'); fbq('track', 'ViewContent', {content_name: 'MLL ' + LEAD, value: 297, currency: 'BRL'}); }
+if (PIXEL_ID !== 'SEU_PIXEL_ID') { fbq('init', PIXEL_ID); fbq('track', 'PageView'); fbq('track', 'ViewContent', {content_name: 'MLL', value: 297, currency: 'BRL'}); }
 </script>
 
 <style>
@@ -103,9 +102,9 @@ if (PIXEL_ID !== 'SEU_PIXEL_ID') { fbq('init', PIXEL_ID); fbq('track', 'PageView
 </header>
 
 <main class="wrap">
-  <!-- ===== PLAYER VTURB (conta HS). Quando o vídeo desta lead subir, troque o bloco .player-ph pelo código do player. ===== -->
+  <!-- ===== PLAYER VTURB (conta HS). Teste A/B das leads é feito dentro da Vturb: cole aqui o código do player (ou do teste A/B) no lugar do bloco .player-ph. ===== -->
   <div class="player" id="vsl">
-    <div class="player-ph">O vídeo desta lead entra aqui.</div>
+    <div class="player-ph">O vídeo da VSL entra aqui.</div>
   </div>
   <p class="som">Confira se o som do seu celular está ligado.</p>
 
@@ -207,7 +206,7 @@ if (PIXEL_ID !== 'SEU_PIXEL_ID') { fbq('init', PIXEL_ID); fbq('track', 'PageView
   })();
 
   // Mostra o que tem .esconder no minuto do pitch.
-  // Ajustar PITCH_SEGUNDOS quando o vídeo desta lead estiver editado (minuto em que aparece o preço).
+  // Ajustar PITCH_SEGUNDOS quando as versões estiverem editadas (minuto em que aparece o preço).
   var PITCH_SEGUNDOS = 0; // a definir
   (function esperaPlayer(tentativas) {
     var player = document.querySelector('vturb-smartplayer');
